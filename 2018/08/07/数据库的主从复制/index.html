@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="登陆mysql1$ mysql -uroot -p 在主服务器上创建slave成员1$ GRANT REPLICATION SLAVE ON *.* to &apos;username&apos;@&apos;%&apos; identified by ‘password’; 授权并创建后执行 1$ flush privileges; username、password是账号密码，服务器地址设置为%，这样就可以远程操控从服务器。 主要作">
+<meta name="description" content="感觉主从热备就是对主服务器的一个备份，如果主服务器除了问题可以切换到从服务器，也是网上资料所说的灾备。记录一下，怕忘。。。我是用的是 Mysql 5.7.20，如果以后部分命令有更新再及时更改。">
 <meta name="keywords" content="数据库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记录一下Mysql配置主从热备">
 <meta property="og:url" content="http://yoursite.com/2018/08/07/数据库的主从复制/index.html">
 <meta property="og:site_name" content="Dagerer">
-<meta property="og:description" content="登陆mysql1$ mysql -uroot -p 在主服务器上创建slave成员1$ GRANT REPLICATION SLAVE ON *.* to &apos;username&apos;@&apos;%&apos; identified by ‘password’; 授权并创建后执行 1$ flush privileges; username、password是账号密码，服务器地址设置为%，这样就可以远程操控从服务器。 主要作">
+<meta property="og:description" content="感觉主从热备就是对主服务器的一个备份，如果主服务器除了问题可以切换到从服务器，也是网上资料所说的灾备。记录一下，怕忘。。。我是用的是 Mysql 5.7.20，如果以后部分命令有更新再及时更改。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-13T07:54:48.292Z">
+<meta property="og:updated_time" content="2018-08-13T08:12:37.704Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记录一下Mysql配置主从热备">
-<meta name="twitter:description" content="登陆mysql1$ mysql -uroot -p 在主服务器上创建slave成员1$ GRANT REPLICATION SLAVE ON *.* to &apos;username&apos;@&apos;%&apos; identified by ‘password’; 授权并创建后执行 1$ flush privileges; username、password是账号密码，服务器地址设置为%，这样就可以远程操控从服务器。 主要作">
+<meta name="twitter:description" content="感觉主从热备就是对主服务器的一个备份，如果主服务器除了问题可以切换到从服务器，也是网上资料所说的灾备。记录一下，怕忘。。。我是用的是 Mysql 5.7.20，如果以后部分命令有更新再及时更改。">
 
 
 
@@ -340,7 +340,8 @@
       
 
       
-        <h3 id="登陆mysql"><a href="#登陆mysql" class="headerlink" title="登陆mysql"></a>登陆mysql</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql -uroot -p</span><br></pre></td></tr></table></figure>
+        <p>感觉主从热备就是对主服务器的一个备份，如果主服务器除了问题可以切换到从服务器，也是网上资料所说的灾备。记录一下，怕忘。。。<br>我是用的是 Mysql 5.7.20，如果以后部分命令有更新再及时更改。<br><a id="more"></a></p>
+<h3 id="登陆mysql"><a href="#登陆mysql" class="headerlink" title="登陆mysql"></a>登陆mysql</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mysql -uroot -p</span><br></pre></td></tr></table></figure>
 <h3 id="在主服务器上创建slave成员"><a href="#在主服务器上创建slave成员" class="headerlink" title="在主服务器上创建slave成员"></a>在主服务器上创建slave成员</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ GRANT REPLICATION SLAVE ON *.* to <span class="string">'username'</span>@<span class="string">'%'</span> identified by ‘password’;</span><br></pre></td></tr></table></figure>
 <p>授权并创建后执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ flush privileges;</span><br></pre></td></tr></table></figure>

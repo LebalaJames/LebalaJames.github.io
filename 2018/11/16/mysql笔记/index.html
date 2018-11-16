@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Dagerer">
 <meta property="og:description" content="自己整理的一些MySql知识点，方便记忆。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-16T05:11:45.864Z">
+<meta property="og:updated_time" content="2018-11-16T05:15:20.719Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySql笔记[持续更新]">
 <meta name="twitter:description" content="自己整理的一些MySql知识点，方便记忆。">
@@ -344,11 +344,11 @@
 <h2 id="零碎知识点"><a href="#零碎知识点" class="headerlink" title="零碎知识点"></a>零碎知识点</h2><p>1.使用命令行对mysql进行配置，当mysql重启后所有命令将会被重置。</p>
 <p>2.使用like 须将%放到后面才能触发索引。</p>
 <p>3.默认更新模式为安全模式，下面这条是控制mysql是否可以执行批量更新。若更改成1则开启安全模式，在没有where的条件下不能执行update操作。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; safe_update_mode = 0;</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; safe_update_mode = 0;</span><br></pre></td></tr></table></figure>
 <p>4.左链接是左侧数据都显示右侧数据没有的用null表示，右链接相反。</p>
 <p>5.limit 0,10 的意思是查询从0-10条。</p>
 <p>6.查询sql执行时间</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show variables like <span class="string">'%pro%'</span>;</span><br><span class="line">mysql&gt; <span class="built_in">set</span> profiling = 1;</span><br><span class="line">mysql&gt; show profiles;</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show variables like '%pro%';</span><br><span class="line">mysql&gt; set profiling = 1;</span><br><span class="line">mysql&gt; show profiles;</span><br></pre></td></tr></table></figure>
 
       
     </div>

@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="github,hexo,基础," />
 
 
 
@@ -94,16 +94,18 @@
 
 
 
-<meta name="description" content="Hexo+github 快速搭建blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dagerer">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="自己整理的一些MySql知识点，方便记忆。">
+<meta name="keywords" content="github,hexo,基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySql笔记[持续更新]">
+<meta property="og:url" content="http://yoursite.com/2018/11/16/mysql笔记/index.html">
 <meta property="og:site_name" content="Dagerer">
-<meta property="og:description" content="Hexo+github 快速搭建blog">
+<meta property="og:description" content="自己整理的一些MySql知识点，方便记忆。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-16T05:08:26.519Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dagerer">
-<meta name="twitter:description" content="Hexo+github 快速搭建blog">
+<meta name="twitter:title" content="MySql笔记[持续更新]">
+<meta name="twitter:description" content="自己整理的一些MySql知识点，方便记忆。">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/16/mysql笔记/"/>
 
 
 
 
 
-  <title>Dagerer</title>
+  <title>MySql笔记[持续更新] | Dagerer</title>
   
 
 
@@ -163,9 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -258,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -290,9 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/16/mysql笔记/" itemprop="url">MySql笔记[持续更新]</a></h1>
+          <h1 class="post-title" itemprop="name headline">MySql笔记[持续更新]</h1>
         
 
         <div class="post-meta">
@@ -342,16 +340,11 @@
       
 
       
-        
-          <p>自己整理的一些MySql知识点，方便记忆。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/16/mysql笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>自己整理的一些MySql知识点，方便记忆。<br><a id="more"></a></p>
+<h2 id="零碎知识点"><a href="#零碎知识点" class="headerlink" title="零碎知识点"></a>零碎知识点</h2><p>1.使用命令行对mysql进行配置，当mysql重启后所有命令将会被重置。</p>
+<p>2.使用like 须将%放到后面才能触发索引。</p>
+<p>3.默认<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">4.左链接是左侧数据都显示右侧数据没有的用null表示，右链接相反。</span><br><span class="line"></span><br><span class="line">5.limit 0,10 的意思是查询从0-10条。</span><br><span class="line"></span><br><span class="line">6.查询sql执行时间</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">	mysql&gt; show variables like &apos;%pro%&apos;;</span><br><span class="line">	mysql&gt; set profiling = 1;</span><br><span class="line">	mysql&gt; show profiles;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -366,262 +359,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/23/小面经/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dager">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatarme.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dagerer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/23/小面经/" itemprop="url">我自己的小公司面试经历</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-23T09:49:29+08:00">
-                2018-08-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/github/" rel="tag"># github</a>
           
-            
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-
+            <a href="/tags/基础/" rel="tag"># 基础</a>
           
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>上大学的时候就想着有一天能去个一线工作，是计算机这个专业给了我这样一个机会，能够去一线发展，接触不同领域的人。在这样一个开源的计算机世界中，我找到了编程的乐趣，找到了努力的方向，每天都能看到许多人为之学习奋斗而督促自己也要继续学习，丰富自己的技术栈。。。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/23/小面经/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/23/小面经/" rel="next" title="我自己的小公司面试经历">
+                <i class="fa fa-chevron-left"></i> 我自己的小公司面试经历
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/19/数据库的主从复制/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dager">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatarme.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dagerer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/19/数据库的主从复制/" itemprop="url">记录一下Mysql配置主从热备</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-19T13:06:12+08:00">
-                2018-08-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>感觉主从热备就是对主服务器的一个备份，如果主服务器除了问题可以切换到从服务器，也是网上资料所说的灾备。记录一下，怕忘。。。<br>我是用的是 Mysql 5.7.20，如果以后部分命令有更新再及时更改。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/19/数据库的主从复制/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -631,134 +402,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/19/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dager">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatarme.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dagerer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/19/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-19T13:06:12+08:00">
-                2018-08-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/19/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -766,6 +414,25 @@
 
 
           
+  <div class="comments" id="comments">
+    
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+      var gitment = new Gitment({
+        id: '<%= page.date %>',
+        owner: 'dagerer',
+        repo: 'dagerer.github.io',
+        oauth: {
+          client_id: 'ef3a21098f45e2926999',
+          client_secret: 'd439ad7ec36fd3ec108d80d12d80b33d8beffec2',
+        },
+      })
+      gitment.render('comments')
+    </script>
+    
+  </div>
+
 
         </div>
         
@@ -786,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatarme.jpg"
@@ -864,6 +540,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#零碎知识点"><span class="nav-number">1.</span> <span class="nav-text">零碎知识点</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -991,10 +683,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
